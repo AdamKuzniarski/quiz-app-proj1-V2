@@ -1,0 +1,25 @@
+nav {
+  height: 100px;
+  width: 100%;
+  background: var(--backround-clr);
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 2;
+  border-top: 3px solid var(--txt-clr);
+}
+
+nav ul {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+nav a i {
+  font-size: 40px;
+}
