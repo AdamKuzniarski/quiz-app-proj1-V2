@@ -2,17 +2,14 @@ nav {
   height: 100px;
   width: 100%;
   background: var(--backround-clr);
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  position: sticky;
   bottom: 0;
   z-index: 2;
   border-top: 3px solid var(--txt-clr);
 }
 
 nav ul {
-  height: 100px;
+  height: 100x;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -22,4 +19,5 @@ nav ul {
 
 nav a i {
   font-size: 40px;
+  padding-top: 20px;
 }
