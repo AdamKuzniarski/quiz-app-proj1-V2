@@ -23,3 +23,14 @@
 .answer__btn {
   padding: 5px 15px;
 }
+
+
+.tags-container{
+display: flex;
+gap: 10px;
+margin-left: 35px;
+}
+
+.tag{
+  color: var(--txt-clr);
+}
