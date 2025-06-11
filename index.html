@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/script.js" defer></script>
     <title>Quiz App 2</title>
   </head>
   <body>
@@ -27,7 +28,7 @@
       <main>
         <article class="card border-btm">
           <div class="question">
-            <button class="icon-button">
+            <button class="icon-button" data-js="bookmark1">
               <i class="fa-solid fa-bookmark question__bookmark"></i>
             </button>
             <h2>
@@ -36,8 +37,10 @@
             </h2>
           </div>
           <div class="answer">
-            <button class="answer__btn">Show the answer</button>
-            <h3 class="hide">Cascading Style Sheets</h3>
+            <button class="answer__btn" data-js="show-answer1-button">
+              Show the answer
+            </button>
+            <h3 class="hide" data-js="show-answer1">Cascading Style Sheets</h3>
             <div class="tags-container">
               <p class="tag">#html</p>
               <p class="tag">#css</p>
