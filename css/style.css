@@ -17,9 +17,9 @@
   --accent-nav: #ffb703;
   --txt-clr: #ffffffff;
   --accent2-clr: rgb(26, 0, 0);
-}
-body {
-  
+  }
+
+  body {
   font-family: "Nunito Sans", sans-serif;
   background: var(--accent2-clr);
 }
