@@ -28,3 +28,4 @@ function updateCharCount() {
   } characters left`;
 }
 
+/* New Card Section */

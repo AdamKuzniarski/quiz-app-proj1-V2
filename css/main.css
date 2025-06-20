@@ -45,6 +45,17 @@ label{
   background: var(--backround-clr);
   padding: 50px 0;
 }
+.label__tags{
+  text-align: center;
+  background: var(--backround-clr);
+  color: var(--txt-clr);
+}
+.input__tags{
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding-bottom: 5px;
+}
 .chart-count{
   color: var(--txt-clr);
   background: var(--backround-clr);
