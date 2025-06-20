@@ -51,18 +51,17 @@ newCard.innerHTML += `
               <i class="fa-solid fa-bookmark question__bookmark"></i>
             </button>
             <h2>
-              Question: What does <br />
-              CSS stand for?
+              Question: ${data.question}?
             </h2>
           </div>
           <div class="answer">
             <button class="answer__btn" data-js="show-answer1-button">
               Show the answer
             </button>
-            <h3 class="hide" data-js="show-answer1">Cascading Style Sheets</h3>
+            <h3 class="hide" data-js="show-answer1">${data.answer}</h3>
             <div class="tags-container">
-              <p class="tag">#html</p>
-              <p class="tag">#css</p>
+              <p class="tag">#${data.tags}</p>
+              
             </div>
           </div>
         </article>
