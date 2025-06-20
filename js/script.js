@@ -5,6 +5,8 @@ bookmarkButton.addEventListener("click", () => {
   bookmarkButton.classList.toggle("bookmark--mark");
 });
 
+console.log("test");
+
 textArea1.addEventListener("input", updateCharCount);
 
 const answer1H3Element = document.querySelector("[data-js=show-answer1]");
@@ -26,16 +28,20 @@ function updateCharCount() {
   } characters left`;
 }
 
-/* New Card Section */
-
-const submitButton = document.querySelector('[data-js="form-submit-btn"]');
-
-if (submitButton) {
-  submitButton.addEventListener("click", (event) => {
-    event.preventDefault();
-    console.log("test");
-  });
-}
-
+/* new Card */
+const mainSection = document.querySelector('[data-js="main-element"]');
 const newCard = document.createElement("div");
-/* newCard.classList.add(""); */
+
+newCard.innerHTML = `
+<article class="card border-btm">
+          <div class="question">
+            <button class="icon-button" data-js="bookmark1">
+              <i class="fa-solid fa-bookmark question__bookmark"></i>
+            </button>
+            <h2>
+              Question: What does <br />
+              CSS stand for?
+            </h2>
+`;
+
+mainSection.append(newCard);
