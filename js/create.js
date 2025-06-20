@@ -1,31 +1,8 @@
-const bookmarkButton = document.querySelector("[data-js=bookmark1]");
+
 const textArea1 = document.querySelector("[data-js=textarea1-counter]");
 const charCountElement = document.querySelector('[data-js="counter1"]');
-const answer1H3Element = document.querySelector("[data-js=show-answer1]");
-const showAnswerButton = document.querySelector(
-"[data-js=show-answer1-button]"
-);
-const hideAnswerButton = document.querySelector(
-"[data-js=hide-answer1-button]"
-);
+textArea1.addEventListener("input", updateCharCount);
 
-if (bookmarkButton) {
-  bookmarkButton.addEventListener("click", () => {
-    bookmarkButton.classList.toggle("bookmark--mark");
-  });
-}
-
-if (textArea1 && charCountElement) {
-  textArea1.addEventListener("input", updateCharCount);
-  updateCharCount();
-}
-
-if (showAnswerButton && answer1H3Element) {
-  showAnswerButton.addEventListener("click", () => {
-    answer1H3Element.classList.remove("hide");
-    showAnswerButton.classList.add("hide");
-  });
-}
 
 function updateCharCount() {
   const maxLength = textArea1.getAttribute("maxlength");
@@ -75,9 +52,9 @@ form.addEventListener("submit", (event) => {
     </article>
   `;
 
-  if (mainSection) {
+  
     mainSection.appendChild(newCard);
-  }
+  
 form.reset()
 
 });
