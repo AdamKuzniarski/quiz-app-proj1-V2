@@ -34,3 +34,20 @@ margin-left: 35px;
 .tag{
   color: var(--txt-clr);
 }
+
+label{
+  display: block;
+}
+
+.label__textarea{
+  text-align: center;
+  color: var(--txt-clr);
+  background: var(--backround-clr);
+  padding: 50px 0;
+}
+.chart-count{
+  color: var(--txt-clr);
+  background: var(--backround-clr);
+  text-align: right;
+  padding-right: 10px;
+}

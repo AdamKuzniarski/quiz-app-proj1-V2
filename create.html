@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
+     <script src="./js/script.js" defer></script>
     <title>Quiz App 2</title>
   </head>
   <body>
@@ -25,55 +26,18 @@
         <h1>Quiz App</h1>
       </header>
       <main>
-        <article class="card border-btm">
-          <section class="question">
-            <button class="icon-button">
-              <i
-                class="fa-solid fa-bookmark question__bookmark bookmark--mark"
-              ></i>
-            </button>
-            <h2>
-              How many wizards <br />
-              were killed in making <br />
-              of Uizard?
-            </h2>
-          </section>
-          <div class="answer">
-            <h3>All of them</h3>
-          </div>
-        </article>
-        <article class="card border-btm">
-          <section class="question">
-            <i
-              class="fa-solid fa-bookmark question__bookmark bookmark--mark"
-            ></i>
-            <h2>
-              How many wizards <br />
-              were killed in making <br />
-              of Uizard?
-            </h2>
-          </section>
-          <div class="answer">
-            <h3>All of them</h3>
-          </div>
-        </article>
-        <article class="card border-btm">
-          <section class="question">
-            <button class="icon-button">
-              <i
-                class="fa-solid fa-bookmark question__bookmark bookmark--mark"
-              ></i>
-            </button>
-            <h2>
-              How many wizards <br />
-              were killed in making <br />
-              of Uizard?
-            </h2>
-          </section>
-          <div class="answer">
-            <h3>All of them</h3>
-          </div>
-        </article>
+        <label class="label__textarea" for="textarea-question">Your Question:</label>
+        <textarea cols="100" rows="5" name="question" maxlength="150" data-js="textarea1-counter" id="textarea-question">
+            
+        </textarea>
+         <div id="char-count" class="chart-count">150 characters left</div>
+
+        <label class="label__textarea" for="textarea-answer">Your Answer:</label>
+        <textarea cols="100" rows="5" name="answer" id="textarea-answer" maxlength="150" data-js="textarea2-counter" ></textarea>
+        <div id="char-count" class="chart-count">150 characters left</div>
+        </textarea>
+        <label for="tags">Tags:</label>
+        <input type="text" id="tags" name="tags">
       </main>
 
       <nav>
@@ -88,7 +52,7 @@
               class="icon-button"
               href="bookmark.html"
               aria-label="to boomarks page"
-              ><i class="fa-solid fa-bookmark nav--mark"></i
+              ><i class="fa-solid fa-bookmark"></i
             ></a>
           </li>
           <li>
@@ -96,7 +60,7 @@
               class="icon-button"
               href="create.html"
               aria-label="to create page"
-              ><i class="fa-solid fa-plus"></i
+              ><i class="fa-solid fa-plus nav--mark"></i
             ></a>
           </li>
           <li>
