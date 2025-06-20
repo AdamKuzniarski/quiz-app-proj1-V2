@@ -17,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
-     <script src="./js/script.js" defer></script>
+     <script src="./js/create.js" defer></script>
     <title>Quiz App 2</title>
   </head>
   <body>
@@ -26,20 +26,24 @@
         <h1>Quiz App</h1>
       </header>
       <main>
-        <label class="label__textarea" for="textarea-question">Your Question:</label>
-        <textarea cols="100" rows="5" name="question" maxlength="150" data-js="textarea1-counter" id="textarea-question">
+        <form data-js="form">
+
+            <label class="label__textarea" for="textarea-question">Your Question:</label>
+            <textarea cols="46" rows="5" name="question" maxlength="150" data-js="textarea1-counter" id="textarea-question" required></textarea>
+            <span id="char-count" data-js="counter1" class="chart-count">150 characters left</span>
             
+            <label class="label__textarea" for="textarea-answer">Your Answer:</label>
+            <textarea cols="46" rows="5" name="answer" id="textarea-answer" maxlength="150" data-js="textarea2-counter" required></textarea>
+            <span id="char-count" class="chart-count">150 characters left</span>
         </textarea>
-         <div id="char-count" class="chart-count">150 characters left</div>
-
-        <label class="label__textarea" for="textarea-answer">Your Answer:</label>
-        <textarea cols="100" rows="5" name="answer" id="textarea-answer" maxlength="150" data-js="textarea2-counter" ></textarea>
-        <div id="char-count" class="chart-count">150 characters left</div>
-        </textarea>
-        <label for="tags">Tags:</label>
-        <input type="text" id="tags" name="tags">
+        <label class="label__tags" for="tags">Tags:</label>
+        <input  class="input__tags" value="#" data-js="input-tags" type="text" id="tags" name="tags">
+        <button class="answer__btn" data-js="form-submit-btn">Submit</button>
+    </form>
       </main>
+      <section data-js="main-element">
 
+      </section>
       <nav>
         <ul>
           <li>

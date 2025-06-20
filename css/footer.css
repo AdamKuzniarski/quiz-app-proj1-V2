@@ -4,6 +4,7 @@ nav {
   background: var(--backround-clr);
   position: sticky;
   bottom: 0;
+  left: 0;
   z-index: 2;
   border-top: 3px solid var(--txt-clr);
 }
