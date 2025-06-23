@@ -70,7 +70,5 @@ form.addEventListener("submit", (event) => {
     bookmarkButton.classList.toggle("bookmark--mark");
   });
 
-
-
   
 });
